@@ -1,0 +1,241 @@
+/* Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #D7DBDD;
+}
+
+/* Header */
+
+header {
+    background: #000000;
+    margin : 0;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    color: white;
+    border-bottom: 3px solid #F1C40F;
+}
+
+header a {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+}
+
+header a[href] {
+    margin-right: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    float: right;
+}
+
+nav a:hover {
+    color: #F1C40F;
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+header li:hover {
+    color: #F1C40F;
+    text-decoration: overline;
+}
+
+header li.current {
+    color: #F1C40F;
+    cursor: pointer;
+    text-decoration: overline;
+}
+
+header #logo {
+    font-weight: bold;
+    color: #F1C40F;
+    cursor: pointer;
+}
+
+nav li:first-of-type {
+    margin-left: 30px;
+}
+
+/* Main section */
+
+#main-details-index {
+    margin: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/weights.jpg') no-repeat 0 -600px;
+    min-height: 50vh;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+#main-details-index h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+#main-details-index li { 
+    list-style-type: none;
+    font-size: 25px;
+    line-height: 1.4em;
+}
+
+/* Box section */
+
+/* span[id="img-container"]:parent {
+    position: relative;
+    top: 500px;
+    padding: 0;
+} */
+
+#img-container span {
+    padding: 0;
+}
+
+.box {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+#img-container img {
+    width: 65%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    height:auto;
+}
+
+#img-container + h1{
+    margin-top: 0;
+    padding: 0;
+}
+
+.box i {
+    font-size: 175px;
+}
+
+.fa-heartbeat {
+    color: #CB4335;
+    margin-top:10px;
+}
+
+.fa-user {
+    color: #212F3D;
+    margin-bottom: 10px;
+}
+
+#boxes::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#boxes .container div:nth-of-type(1) {
+    position: relative;
+    top: -10px;
+}
+
+/* .fa-user + h1 {
+    margin-top: 5px;
+} */
+
+/* Social networkings */
+
+#social-networks {
+    /* text-align: center; */
+    /* margin: auto; */
+    /* background: #000; */
+    border: 3px solid #000;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    background: #000;
+}
+
+#social-networks a {
+    color: #fff;
+}
+
+#social-networks i {
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 10px 2.5px 2.5px 2.5px;
+    transition: all ease-in-out 250ms;
+}
+
+#social-networks i:hover {
+    color: #F1C40F;
+    font-weight: normal;
+}
+
+#social-networks h1{
+    /* text-align: center; */
+    margin: auto;
+}
+
+/* Gyms rules */
+
+#rules {
+    float: left;
+    width: 70%;
+}
+
+#rules ol {
+    
+}
+
+#rules li {
+    margin: 10px 0px;
+}
+
+#main-terms-and-conditions aside {
+    float: right;
+    width: 30%;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    background: #CB4335;
+    color: #fff;
+    min-height: 5vh;
+}
+
+footer p {
+    
+    margin: 0;
+    padding-top: 1.75vh;
+    padding-bottom: 1.75vh;
+    font-size: 20px;
+}
