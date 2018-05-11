@@ -226,7 +226,15 @@ nav li:first-of-type {
     height: 75vh;
 }
 
-.wrap {position: relative;}
+.wrap {
+    position: relative;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 .slide {
     background-size: cover;
@@ -254,6 +262,7 @@ nav li:first-of-type {
 }
 
 .arrow {
+    opacity: 0.2;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -261,6 +270,12 @@ nav li:first-of-type {
     width: 0;
     height: 0;
     border-style: solid;
+    transition: all ease-in 100ms;
+    transition: all ease-out 500ms;
+}
+
+.arrow:hover {
+    opacity: .9;
 }
 
 #arrow-left {
